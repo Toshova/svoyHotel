@@ -1,20 +1,18 @@
 <template>
     <div class="pop_dir_wrap">
         <h3 class="swipe_title" >Популярные направления</h3>
-        <div class="swiper-button-next selectornx2" slot="button-next"></div>
-        <div class="swiper-button-prev selectorpr2" slot="button-prev"></div>
+        <div class="swiper-button-next selectornx4" slot="button-next"></div>
+        <div class="swiper-button-prev selectorpr4" slot="button-prev"></div>
        
-        <swiper ref="mySwiper2" :options="swiperOptions" :modules="modules" class="swipers">
+        <swiper ref="mySwiper4" :options="swiperOptions" :modules="modules" class="swipers">
  
     
-      <swiper-slide><img src="/sp.png" ></swiper-slide>
-      <swiper-slide><img src="/altay.png" ></swiper-slide>
-      <swiper-slide><img src="/camch.png" ></swiper-slide>
-      <swiper-slide><img src="/baykal.png" ></swiper-slide>
-      <swiper-slide><img src="/sp.png" ></swiper-slide>
-      <swiper-slide><img src="/altay.png" ></swiper-slide>
-      <swiper-slide><img src="/camch.png" ></swiper-slide>
-      <swiper-slide><img src="/baykal.png" ></swiper-slide>
+      <swiper-slide><img src="/adv_1.png" ></swiper-slide>
+      <swiper-slide><img src="/adv_2.png" ></swiper-slide>
+      <swiper-slide><img src="/adv_3.png" ></swiper-slide>
+      <swiper-slide><img src="/adv_1.png" ></swiper-slide>
+      <swiper-slide><img src="/adv_2.png" ></swiper-slide>
+      <swiper-slide><img src="/adv_3.png" ></swiper-slide>
       
       
     </swiper>
@@ -35,10 +33,10 @@
         return {
           swiperOptions: {
             navigation: {
-                nextEl: '.selectornx2',
-                prevEl: '.selectorpr2'
+                nextEl: '.selectornx4',
+                prevEl: '.selectorpr4'
                     },
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween:30,
             keyboardControl: true,
            
@@ -47,7 +45,7 @@
       },
       computed: {
         swiper() {
-            return this.$refs.mySwiper2.$swiper
+            return this.$refs.mySwiper4.$swiper
           
         }
       },

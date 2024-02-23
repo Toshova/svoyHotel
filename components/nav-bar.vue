@@ -54,7 +54,6 @@ export default{
     height: 72px;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid greenyellow
 }
 .label{
     display: flex;
@@ -62,7 +61,6 @@ export default{
     height: 40px;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid greenyellow;
     color: #0D0E20;
     font-weight: 900;
     font-size: 15px;

@@ -1,13 +1,25 @@
 <template>
     <div class="searchBar_wrap">
         <div class="banner_wrap">
-            <h1>Находите <span class="orange"> лучшие размещения</span> <br>по всей России!</h1>
+            <div class="search_title">
+                <h1>Находите <span class="orange"> лучшие размещения</span> <br>по всей России!</h1>                
+            </div>
+
             <div class="search_wrap">
-                <input id="city" type="text" placeholder="Город, регион, отель, аэропорт, вокзал или достопри...">
-                <input type="text">
-                <input type="text">
-            <button class="btn_prim">Найти</button>
-       </div>
+                <div class="search_form">
+                    <input id="city" type="text" placeholder="Город, регион, отель, аэропорт, вокзал или достопри...">
+                    <input id="date" type="date" placeholder="dd/mm/yyyy">
+                    <input type="text">
+                    <button class="btn_prim">Найти</button>
+                </div>
+                <div class="seach_foot">
+                    <p>Популярные направления:</p>
+                </div>
+                
+                     
+            </div>
+           
+            
         </div>
       
     </div>
@@ -26,40 +38,38 @@ export default {
 
 
 <style scoped>
-.search_wrap{
-    display: flex;
-    flex-direction: row;
-    min-height: 160px;
-    width: 80%;
-    border: 1px solid red;
-    margin-left: 100px;
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-   
+
+
+.search_title{
+    width: 100%;
 }
+
+.search_form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 input{
     border: 1px solid #DCDFE2;
     height: 64px;
-    width: 236px;
-
+    width: 20%;
 }
 #city{
-    width:40%;
+    width:45%;
     background-image: url("/geodata.png"); 
     background-repeat: no-repeat;
     background-position: 2% 50%;
     padding-left: 40px
 }
 
-
-
  h1{
     font-weight: 700;
     font-size: 48px;
     line-height: 50px;
     color: #0D0E20;
-    margin-left: 100px;
+    
  }
  .orange{
     color: #FF5108
@@ -68,7 +78,6 @@ input{
  display: flex;
  width: 100%;
  height: 556px;
- border: 1px solid red;
  
 }
 .banner_wrap{
@@ -78,16 +87,10 @@ input{
  background-image: url("/banner.png");
  background-repeat: no-repeat;
  background-position: right 50%;
- border: 1px solid rgb(0, 255, 123);
  justify-content: space-around;
+align-items: center;
 }
 
-.btn_prim{
-    width: 184px;
-    height: 64px;
-    background-color: #FF5108;
-    color: white;
-}
 
 
 </style>
